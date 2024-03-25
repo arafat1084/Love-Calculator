@@ -1,0 +1,49 @@
+print("The Love Calculator is calculating your score...")
+name1 = input()  # What is your name?
+name2 = input()  # What is their name?
+#print(f'name1 = "{name1}"')
+#print(f'name2 = "{name2}"')
+
+#convert the name to lowercase
+
+name1 = name1.lower()
+name2 = name2.lower()
+
+#count the number of the letters in the name
+
+t = name1.count("t") + name2.count("t")
+r = name1.count("r") + name2.count("r")
+u = name1.count("u") + name2.count("u")
+e = name1.count("e") + name2.count("e")
+
+#print (f"T occurs {t} times")
+#print (f"r occurs {r} times")
+#print (f"u occurs {u} times")
+#print (f"e occurs {e} times")
+
+total1 = t + r + u + e
+
+#print(f"Total = {total1}")
+
+# Calculate love for the input
+
+l = name1.count("l") + name2.count("l")
+o = name1.count("o") + name2.count("o")
+v = name1.count("v") + name2.count("v")
+e = name1.count("e") + name2.count("e")
+
+total2 = l + o + v + e
+#print(f"Total = {total2}")
+
+#print love score
+love_score = int(str(total1) + str(total2))
+#print (f'Print: "Your score is {love_score}"')
+
+if love_score < 10 or love_score > 90:
+  print(f'Your score is {love_score}, you go together like coke and mentos.')
+
+elif love_score >= 40 and love_score <= 50:
+  print(f"Your score is {love_score}, you are alright together.")
+
+else:
+  print(f'Your score is {love_score}.')
